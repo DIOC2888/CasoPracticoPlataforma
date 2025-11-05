@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "CatalogoCursos/1.0.0": {
+        "runtime": {
+          "CatalogoCursos.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CatalogoCursos/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,15 @@
+C:\Users\denis\OneDrive\Desktop\CasoPracticoPlataforma\CatalogoCursos\obj\Debug\net9.0\CatalogoCursos.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\denis\OneDrive\Desktop\CasoPracticoPlataforma\CatalogoCursos\obj\Debug\net9.0\CatalogoCursos.AssemblyInfoInputs.cache
+C:\Users\denis\OneDrive\Desktop\CasoPracticoPlataforma\CatalogoCursos\obj\Debug\net9.0\CatalogoCursos.AssemblyInfo.cs
+C:\Users\denis\OneDrive\Desktop\CasoPracticoPlataforma\CatalogoCursos\obj\Debug\net9.0\CatalogoCursos.csproj.CoreCompileInputs.cache
+C:\Users\denis\OneDrive\Desktop\CasoPracticoPlataforma\CatalogoCursos\obj\Debug\net9.0\CatalogoCursos.sourcelink.json
+C:\Users\denis\OneDrive\Desktop\CasoPracticoPlataforma\CatalogoCursos\bin\Debug\net9.0\CatalogoCursos.exe
+C:\Users\denis\OneDrive\Desktop\CasoPracticoPlataforma\CatalogoCursos\bin\Debug\net9.0\CatalogoCursos.deps.json
+C:\Users\denis\OneDrive\Desktop\CasoPracticoPlataforma\CatalogoCursos\bin\Debug\net9.0\CatalogoCursos.runtimeconfig.json
+C:\Users\denis\OneDrive\Desktop\CasoPracticoPlataforma\CatalogoCursos\bin\Debug\net9.0\CatalogoCursos.dll
+C:\Users\denis\OneDrive\Desktop\CasoPracticoPlataforma\CatalogoCursos\bin\Debug\net9.0\CatalogoCursos.pdb
+C:\Users\denis\OneDrive\Desktop\CasoPracticoPlataforma\CatalogoCursos\obj\Debug\net9.0\CatalogoCursos.dll
+C:\Users\denis\OneDrive\Desktop\CasoPracticoPlataforma\CatalogoCursos\obj\Debug\net9.0\refint\CatalogoCursos.dll
+C:\Users\denis\OneDrive\Desktop\CasoPracticoPlataforma\CatalogoCursos\obj\Debug\net9.0\CatalogoCursos.pdb
+C:\Users\denis\OneDrive\Desktop\CasoPracticoPlataforma\CatalogoCursos\obj\Debug\net9.0\CatalogoCursos.genruntimeconfig.cache
+C:\Users\denis\OneDrive\Desktop\CasoPracticoPlataforma\CatalogoCursos\obj\Debug\net9.0\ref\CatalogoCursos.dll
