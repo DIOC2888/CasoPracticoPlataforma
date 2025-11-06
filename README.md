@@ -6,5 +6,6 @@
   2. Abrir carpeta en Visual Studio Code
   3. En la terminar ingresar:
       *cd CatalogoCursos*
+  4. Luego
       *dotnet run*
-  4. Listo
+  5. Listo
