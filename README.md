@@ -1,8 +1,8 @@
 # CasoPracticoPlataforma
 
-## Un catálogo en memoria de cursos y permite buscar por nombre. El programa pide al usuario un término de búsqueda, filtra la lista
-## de cursos usando una comparación que ignora mayúsculas, y muestra 
-## por pantalla los cursos que coinciden 
+Un catálogo en memoria de cursos y permite buscar por nombre. El programa pide al usuario un término de búsqueda, filtra la lista
+de cursos usando una comparación que ignora mayúsculas, y muestra 
+por pantalla los cursos que coinciden 
 
 ### con cómo ejecutar y breve descripción del logro.
 ### Como ejecutar el código
