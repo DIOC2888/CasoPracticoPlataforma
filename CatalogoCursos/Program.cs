@@ -12,27 +12,84 @@ class Program
     static List<(int id, string name, string area)> Courses = new() {
         (1, "Algoritmos I", "CS"),
         (2, "Introducción a la Programación", "CS"),
-        (3, "Matemática Discreta", "Math")
+        (3, "Matemática Discreta", "Math"),
+        (4, "Estructuras de Datos", "CS"),
+        (5, "Probabilidades", "Math")
     };
 
     static void Main()
     {
-        // Encabezado y prompt al usuario
+        // Encabezado de la aplicación
         Console.WriteLine("Catálogo de Cursos - Demo");
-        Console.Write("Buscar: ");
 
-        // Leer la entrada del usuario. Console.ReadLine puede devolver null,
-        // por eso usamos el operador ?? para garantizar una cadena no nula.
-        // También aplicamos Trim() para ignorar espacios en los extremos.
-        var q = (Console.ReadLine() ?? "").Trim();
+        // Bucle principal: permitimos repetir acciones hasta que el usuario salga
+        while (true)
+        {
+            Console.WriteLine();
+            Console.WriteLine("Opciones: (s) Buscar  (p) Paginación  (q) Salir");
+            Console.Write("Selecciona una opción: ");
+            var opt = (Console.ReadLine() ?? "").Trim().ToLowerInvariant();
 
-        // Filtrar la lista usando Contains con comparación que ignora mayúsculas.
-        // Nota: Contains con StringComparison requiere .NET Core / .NET 5+.
-        var results = Courses.Where(c => c.name.Contains(q,
-           StringComparison.OrdinalIgnoreCase));
+            if (opt == "q")
+            {
+                // Salir de la aplicación
+                break;
+            }
+            else if (opt == "s")
+            {
+                // Modo búsqueda por texto
+                Console.Write("Buscar: ");
+                var q = (Console.ReadLine() ?? "").Trim();
 
-        // Si la consulta está vacía, mostramos todos los cursos (comportamiento
-        // deliberado) pero podríamos cambiarlo para pedir una búsqueda válida.
+                // Si la consulta está vacía, mostramos todos los cursos por diseño
+                var results = string.IsNullOrEmpty(q)
+                    ? Courses
+                    : Courses.Where(c => c.name.Contains(q, StringComparison.OrdinalIgnoreCase));
+
+                PrintResults(results);
+            }
+            else if (opt == "p")
+            {
+                // Modo paginación simulada
+                const int pageSize = 2; // tamaño de página fijo para el ejemplo
+                int page = 0;
+                int total = Courses.Count;
+                int totalPages = (total + pageSize - 1) / pageSize;
+
+                while (true)
+                {
+                    var pageItems = Courses.Skip(page * pageSize).Take(pageSize);
+                    Console.WriteLine();
+                    Console.WriteLine($"Página {page + 1}/{totalPages}");
+                    PrintResults(pageItems);
+
+                    Console.WriteLine("(n) Siguiente  (b) Anterior  (e) Salir paginación");
+                    var cmd = (Console.ReadLine() ?? "").Trim().ToLowerInvariant();
+                    if (cmd == "n")
+                    {
+                        if (page < totalPages - 1) page++;
+                    }
+                    else if (cmd == "b")
+                    {
+                        if (page > 0) page--;
+                    }
+                    else
+                    {
+                        // cualquier otra opción sale del modo paginación
+                        break;
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Opción no válida. Por favor elige 's', 'p' o 'q'.");
+            }
+        }
+    }
+
+    // Método auxiliar para imprimir resultados y manejar el caso "sin coincidencias"
+    static void PrintResults(IEnumerable<(int id, string name, string area)> results)
+    {
         var any = false;
         foreach (var c in results)
         {
@@ -40,7 +97,6 @@ class Program
             Console.WriteLine($"[{c.id}] {c.name} - {c.area}");
         }
 
-        // Si no hubo coincidencias, informamos al usuario.
         if (!any)
         {
             Console.WriteLine("No se encontraron cursos para la búsqueda especificada.");
