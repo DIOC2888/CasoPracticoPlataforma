@@ -17,5 +17,15 @@ por pantalla los cursos que coinciden
 El código consiste un buscador de un Catálogo de Cursos
 Cursos disponibles:
 1. "Algoritmos I", "CS"),
-2.  "Introducción a la Programación", "CS"
-3.   "Matemática Discreta", "Math"
+2. "Introducción a la Programación", "CS"
+3. "Matemática Discreta", "Math"
+4. "Estructuras de Datos", "CS"
+5. "Probabilidades", "Math"
+
+
+Autores
+Denis Ortega 
+Joshua Donaire
+Marvin Valle
+Gabriela Espinoza
+Andrés López
